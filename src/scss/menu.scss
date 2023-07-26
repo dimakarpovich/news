@@ -1,0 +1,36 @@
+.menu {
+  background: #11192840 linear-gradient(90deg, #387a87 50%, #2b1689 100%);
+
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  &__link {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    color: rgba(243, 243, 243, 0.954);
+    padding: 20px;
+    text-transform: uppercase;
+
+    &::after{
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 4px;
+      left: 0;
+      bottom: 0;
+      background-color: rgba(243, 243, 243, 0.954);
+      transition: 0.4s all;
+    }
+    &:hover {
+      transition:ease-in .4s;
+      transform: scale(1.05);
+    }
+    &:hover::after {
+      width: 100%;
+    }
+  }
+
+
+
+}

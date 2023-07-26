@@ -1,1 +1,76 @@
 @import "reset";
+@import "animation";
+@import "error";
+@import "card";
+@import "header";
+@import "menu";
+@import "weather";
+
+body {
+  position: relative;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.25);
+}
+
+.title {
+  font-size: 50px;
+  text-align: center;
+}
+
+
+.api__title {
+  font-size: 30px;
+  text-align: left;
+  color: rgba(243, 243, 243, 0.954);
+}
+
+.container {
+  margin-left:  auto;
+  margin-right: auto;
+  text-align: center;
+  height: 100%;
+  padding: 0 20px;
+
+}
+
+.form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  &__select {
+    display: flex;
+    justify-content: space-around;
+    &-category, &-country {
+      border: none;
+      height: 40px;
+      border-radius: 20px;
+      text-align: center;
+    }
+  }
+}
+.Category, .Country {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: rgba(249, 240, 240, 0.954);
+}
+.send {
+  margin-top: 15px;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 24px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+.add {
+  margin-top: 20px;
+}
+
+.loader {
+  margin: 0 auto;
+}
+
